@@ -1,0 +1,21 @@
+# 编译产物
+prj/FPGACompetition_Runs/
+prj/log/
+
+# 仿真编译产物
+sim/**/obj_dir/
+sim/**/*.vvp
+sim/**/*.vcd
+sim/**/*.fst
+sim/bfull/
+
+# 编辑器/系统
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 临时文件
+*.tmp
+*.log

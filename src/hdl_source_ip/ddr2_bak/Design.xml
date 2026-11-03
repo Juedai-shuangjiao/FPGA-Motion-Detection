@@ -1,0 +1,423 @@
+1|<?xml version="1.0" encoding="UTF-8"?>
+2|<ipxact:design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:anlogic="http" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+3|    <ipxact:vendor>anlogic.com</ipxact:vendor>
+4|    <ipxact:library>customized</ipxact:library>
+5|    <ipxact:name>design_ddr2</ipxact:name>
+6|    <ipxact:version>1.0</ipxact:version>
+7|    <ipxact:componentInstances>
+8|        <ipxact:componentInstance>
+9|            <ipxact:instanceName>ph1p_ddrmc_wrapper_63f4ac254419_Inst</ipxact:instanceName>
+10|            <ipxact:componentRef vendor="anlogic.com" library="ip" name="MIS_DDRF6F1D0P0" version="1.1"/>
+11|            <ipxact:configurableElementValues>
+12|                <ipxact:configurableElementValue referenceId="PH1P_DDR_TYPE">&quot;Integrated&quot;</ipxact:configurableElementValue>
+13|                <ipxact:configurableElementValue referenceId="PH1P_SINGLE_PLL">0</ipxact:configurableElementValue>
+14|                <ipxact:configurableElementValue referenceId="PH1P_REF_CLK">100.0000</ipxact:configurableElementValue>
+15|                <ipxact:configurableElementValue referenceId="PH1P_DDR_SPEED">1066.00</ipxact:configurableElementValue>
+16|                <ipxact:configurableElementValue referenceId="PH1P_SPEED_BIN">&quot;DDR2-1066&quot;</ipxact:configurableElementValue>
+17|                <ipxact:configurableElementValue referenceId="PH1P_MC_EN">1</ipxact:configurableElementValue>
+18|                <ipxact:configurableElementValue referenceId="GEN_AXI_CTRL">1</ipxact:configurableElementValue>
+19|                <ipxact:configurableElementValue referenceId="PH1P_AXI_CTRL">0</ipxact:configurableElementValue>
+20|                <ipxact:configurableElementValue referenceId="GEN_ECC_EN">1</ipxact:configurableElementValue>
+21|                <ipxact:configurableElementValue referenceId="PH1P_ECC_EN">0</ipxact:configurableElementValue>
+22|                <ipxact:configurableElementValue referenceId="CHECK_ECC">1</ipxact:configurableElementValue>
+23|                <ipxact:configurableElementValue referenceId="MC_ECC">&quot;OFF&quot;</ipxact:configurableElementValue>
+24|                <ipxact:configurableElementValue referenceId="PH1P_AXI_ADDR_MAP">&quot;ROW_COL_BANK&quot;</ipxact:configurableElementValue>
+25|                <ipxact:configurableElementValue referenceId="MC_ADDR_MAP">&quot;ROW_COL_BANK&quot;</ipxact:configurableElementValue>
+26|                <ipxact:configurableElementValue referenceId="PH1P_MC_REORDER">&quot;NORMAL&quot;</ipxact:configurableElementValue>
+27|                <ipxact:configurableElementValue referenceId="MC_REORDER">&quot;NORMAL&quot;</ipxact:configurableElementValue>
+28|                <ipxact:configurableElementValue referenceId="GEN_DUAL_PLL">1</ipxact:configurableElementValue>
+29|                <ipxact:configurableElementValue referenceId="GEN_DELAY_EN">0</ipxact:configurableElementValue>
+30|                <ipxact:configurableElementValue referenceId="GEN_DELAY_B1">0</ipxact:configurableElementValue>
+31|                <ipxact:configurableElementValue referenceId="GEN_DELAY_B2">0</ipxact:configurableElementValue>
+32|                <ipxact:configurableElementValue referenceId="GEN_DELAY_B3">0</ipxact:configurableElementValue>
+33|                <ipxact:configurableElementValue referenceId="GEN_DELAY_B4">0</ipxact:configurableElementValue>
+34|                <ipxact:configurableElementValue referenceId="GEN_DELAY_B5">0</ipxact:configurableElementValue>
+35|                <ipxact:configurableElementValue referenceId="GEN_DELAY_B6">0</ipxact:configurableElementValue>
+36|                <ipxact:configurableElementValue referenceId="GEN_DELAY_B7">0</ipxact:configurableElementValue>
+37|                <ipxact:configurableElementValue referenceId="GEN_DELAY_B8">0</ipxact:configurableElementValue>
+38|                <ipxact:configurableElementValue referenceId="GEN_TRAINING_EN">0</ipxact:configurableElementValue>
+39|                <ipxact:configurableElementValue referenceId="PH1P_MC_AXI">0</ipxact:configurableElementValue>
+40|                <ipxact:configurableElementValue referenceId="PH1P_MC_PAXI">1</ipxact:configurableElementValue>
+41|                <ipxact:configurableElementValue referenceId="GEN_RDBI_EN">0</ipxact:configurableElementValue>
+42|                <ipxact:configurableElementValue referenceId="GEN_CS_EN">0</ipxact:configurableElementValue>
+43|                <ipxact:configurableElementValue referenceId="GEN_AC_BYTE">0</ipxact:configurableElementValue>
+44|                <ipxact:configurableElementValue referenceId="ENABLE_DDR2">1</ipxact:configurableElementValue>
+45|                <ipxact:configurableElementValue referenceId="ENABLE_DDR3">0</ipxact:configurableElementValue>
+46|                <ipxact:configurableElementValue referenceId="ENABLE_DDR4">0</ipxact:configurableElementValue>
+47|                <ipxact:configurableElementValue referenceId="ENABLE_TWO_TYPE">1</ipxact:configurableElementValue>
+48|                <ipxact:configurableElementValue referenceId="GEN_RESET">0</ipxact:configurableElementValue>
+49|                <ipxact:configurableElementValue referenceId="tCK">1876</ipxact:configurableElementValue>
+50|                <ipxact:configurableElementValue referenceId="CS_WIDTH">1</ipxact:configurableElementValue>
+51|                <ipxact:configurableElementValue referenceId="CKE_WIDTH">1</ipxact:configurableElementValue>
+52|                <ipxact:configurableElementValue referenceId="CK_WIDTH">1</ipxact:configurableElementValue>
+53|                <ipxact:configurableElementValue referenceId="ODT_WIDTH">1</ipxact:configurableElementValue>
+54|                <ipxact:configurableElementValue referenceId="BG_WIDTH">0</ipxact:configurableElementValue>
+55|                <ipxact:configurableElementValue referenceId="BA_WIDTH">2</ipxact:configurableElementValue>
+56|                <ipxact:configurableElementValue referenceId="COL_WIDTH">10</ipxact:configurableElementValue>
+57|                <ipxact:configurableElementValue referenceId="ROW_WIDTH">13</ipxact:configurableElementValue>
+58|                <ipxact:configurableElementValue referenceId="ADR_WIDTH">13</ipxact:configurableElementValue>
+59|                <ipxact:configurableElementValue referenceId="PAR_WIDTH">0</ipxact:configurableElementValue>
+60|                <ipxact:configurableElementValue referenceId="HOST_AC_DRV">&quot;75&quot;</ipxact:configurableElementValue>
+61|                <ipxact:configurableElementValue referenceId="HOST_DX_DRV">&quot;75&quot;</ipxact:configurableElementValue>
+62|                <ipxact:configurableElementValue referenceId="HOST_DX_ODT">&quot;75&quot;</ipxact:configurableElementValue>
+63|                <ipxact:configurableElementValue referenceId="DRAM_DRV">&quot;0&quot;</ipxact:configurableElementValue>
+64|                <ipxact:configurableElementValue referenceId="DRAM_ODT">&quot;75&quot;</ipxact:configurableElementValue>
+65|                <ipxact:configurableElementValue referenceId="WDM">1</ipxact:configurableElementValue>
+66|                <ipxact:configurableElementValue referenceId="CL">7</ipxact:configurableElementValue>
+67|                <ipxact:configurableElementValue referenceId="CWL">6</ipxact:configurableElementValue>
+68|                <ipxact:configurableElementValue referenceId="CAL_EN">0</ipxact:configurableElementValue>
+69|                <ipxact:configurableElementValue referenceId="DX_NUM">2</ipxact:configurableElementValue>
+70|                <ipxact:configurableElementValue referenceId="DQS_WIDTH">2</ipxact:configurableElementValue>
+71|                <ipxact:configurableElementValue referenceId="DQ_WIDTH">16</ipxact:configurableElementValue>
+72|                <ipxact:configurableElementValue referenceId="DM_WIDTH">2</ipxact:configurableElementValue>
+73|                <ipxact:configurableElementValue referenceId="MC_ADDR_WIDTH">25</ipxact:configurableElementValue>
+74|                <ipxact:configurableElementValue referenceId="MC_DATA_WIDTH">128</ipxact:configurableElementValue>
+75|                <ipxact:configurableElementValue referenceId="MC_MASK_WIDTH">16</ipxact:configurableElementValue>
+76|                <ipxact:configurableElementValue referenceId="AXI_ID_WIDTH">4</ipxact:configurableElementValue>
+77|                <ipxact:configurableElementValue referenceId="AXI_ADDR_WIDTH">26</ipxact:configurableElementValue>
+78|                <ipxact:configurableElementValue referenceId="AXI_DATA_WIDTH">128</ipxact:configurableElementValue>
+79|                <ipxact:configurableElementValue referenceId="AXI_MASK_WIDTH">16</ipxact:configurableElementValue>
+80|                <ipxact:configurableElementValue referenceId="AC_NUM">4</ipxact:configurableElementValue>
+81|                <ipxact:configurableElementValue referenceId="GEN_BUFG">0</ipxact:configurableElementValue>
+82|                <ipxact:configurableElementValue referenceId="ADD_CLK_LOC">1</ipxact:configurableElementValue>
+83|                <ipxact:configurableElementValue referenceId="PLL0_REFCLK_FREQ">100.0</ipxact:configurableElementValue>
+84|                <ipxact:configurableElementValue referenceId="PLL0_REFCLK_DIV">3</ipxact:configurableElementValue>
+85|                <ipxact:configurableElementValue referenceId="PLL0_FBKCLK_DIV">32</ipxact:configurableElementValue>
+86|                <ipxact:configurableElementValue referenceId="PLL0_FRAC">&quot;DISABLE&quot;</ipxact:configurableElementValue>
+87|                <ipxact:configurableElementValue referenceId="PLL0_FRAC_SDM">0</ipxact:configurableElementValue>
+88|                <ipxact:configurableElementValue referenceId="PLL0_CLK2_DIV">2</ipxact:configurableElementValue>
+89|                <ipxact:configurableElementValue referenceId="PLL0_CLK3_DIV">21</ipxact:configurableElementValue>
+90|                <ipxact:configurableElementValue referenceId="PLL1_REFCLK_FREQ">133.3</ipxact:configurableElementValue>
+91|                <ipxact:configurableElementValue referenceId="PLL1_REFCLK_DIV">4</ipxact:configurableElementValue>
+92|                <ipxact:configurableElementValue referenceId="PLL1_CLK0_DIV">12</ipxact:configurableElementValue>
+93|                <ipxact:configurableElementValue referenceId="BK_NUM">2</ipxact:configurableElementValue>
+94|                <ipxact:configurableElementValue referenceId="ENABLE_324">0</ipxact:configurableElementValue>
+95|                <ipxact:configurableElementValue referenceId="DEFINE_IO_TYPE">&quot;PH1P35_DDRIO_PAD&quot;</ipxact:configurableElementValue>
+96|            </ipxact:configurableElementValues>
+97|        </ipxact:componentInstance>
+98|    </ipxact:componentInstances>
+99|    <ipxact:adHocConnections>
+100|        <ipxact:adHocConnection>
+101|            <ipxact:name>ref_clk</ipxact:name>
+102|            <ipxact:portReferences>
+103|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="ref_clk_mc"/>
+104|                <ipxact:externalPortReference portRef="ref_clk"/>
+105|            </ipxact:portReferences>
+106|        </ipxact:adHocConnection>
+107|        <ipxact:adHocConnection>
+108|            <ipxact:name>sys_rst_n</ipxact:name>
+109|            <ipxact:portReferences>
+110|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="sys_rst_n_mc"/>
+111|                <ipxact:externalPortReference portRef="sys_rst_n"/>
+112|            </ipxact:portReferences>
+113|        </ipxact:adHocConnection>
+114|        <ipxact:adHocConnection>
+115|            <ipxact:name>apb_pclk</ipxact:name>
+116|            <ipxact:portReferences>
+117|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="apb_pclk_mc"/>
+118|                <ipxact:externalPortReference portRef="apb_pclk"/>
+119|            </ipxact:portReferences>
+120|        </ipxact:adHocConnection>
+121|        <ipxact:adHocConnection>
+122|            <ipxact:name>apb_prst_n</ipxact:name>
+123|            <ipxact:portReferences>
+124|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="apb_prst_n_mc"/>
+125|                <ipxact:externalPortReference portRef="apb_prst_n"/>
+126|            </ipxact:portReferences>
+127|        </ipxact:adHocConnection>
+128|        <ipxact:adHocConnection>
+129|            <ipxact:name>apb_pready</ipxact:name>
+130|            <ipxact:portReferences>
+131|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="apb_pready_mc"/>
+132|                <ipxact:externalPortReference portRef="apb_pready"/>
+133|            </ipxact:portReferences>
+134|        </ipxact:adHocConnection>
+135|        <ipxact:adHocConnection>
+136|            <ipxact:name>apb_psel</ipxact:name>
+137|            <ipxact:portReferences>
+138|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="apb_psel_mc"/>
+139|                <ipxact:externalPortReference portRef="apb_psel"/>
+140|            </ipxact:portReferences>
+141|        </ipxact:adHocConnection>
+142|        <ipxact:adHocConnection>
+143|            <ipxact:name>apb_penable</ipxact:name>
+144|            <ipxact:portReferences>
+145|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="apb_penable_mc"/>
+146|                <ipxact:externalPortReference portRef="apb_penable"/>
+147|            </ipxact:portReferences>
+148|        </ipxact:adHocConnection>
+149|        <ipxact:adHocConnection>
+150|            <ipxact:name>apb_pwrite</ipxact:name>
+151|            <ipxact:portReferences>
+152|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="apb_pwrite_mc"/>
+153|                <ipxact:externalPortReference portRef="apb_pwrite"/>
+154|            </ipxact:portReferences>
+155|        </ipxact:adHocConnection>
+156|        <ipxact:adHocConnection>
+157|            <ipxact:name>apb_paddr</ipxact:name>
+158|            <ipxact:portReferences>
+159|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="apb_paddr_mc"/>
+160|                <ipxact:externalPortReference portRef="apb_paddr"/>
+161|            </ipxact:portReferences>
+162|        </ipxact:adHocConnection>
+163|        <ipxact:adHocConnection>
+164|            <ipxact:name>apb_pwdata</ipxact:name>
+165|            <ipxact:portReferences>
+166|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="apb_pwdata_mc"/>
+167|                <ipxact:externalPortReference portRef="apb_pwdata"/>
+168|            </ipxact:portReferences>
+169|        </ipxact:adHocConnection>
+170|        <ipxact:adHocConnection>
+171|            <ipxact:name>apb_prdata</ipxact:name>
+172|            <ipxact:portReferences>
+173|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="apb_prdata_mc"/>
+174|                <ipxact:externalPortReference portRef="apb_prdata"/>
+175|            </ipxact:portReferences>
+176|        </ipxact:adHocConnection>
+177|        <ipxact:adHocConnection>
+178|            <ipxact:name>dhi_clk</ipxact:name>
+179|            <ipxact:portReferences>
+180|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="dhi_clk_mc"/>
+181|                <ipxact:externalPortReference portRef="dhi_clk"/>
+182|            </ipxact:portReferences>
+183|        </ipxact:adHocConnection>
+184|        <ipxact:adHocConnection>
+185|            <ipxact:name>cfg_clk</ipxact:name>
+186|            <ipxact:portReferences>
+187|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="cfg_clk_mc"/>
+188|                <ipxact:externalPortReference portRef="cfg_clk"/>
+189|            </ipxact:portReferences>
+190|        </ipxact:adHocConnection>
+191|        <ipxact:adHocConnection>
+192|            <ipxact:name>cfg_rst_n</ipxact:name>
+193|            <ipxact:portReferences>
+194|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="cfg_rst_n_mc"/>
+195|                <ipxact:externalPortReference portRef="cfg_rst_n"/>
+196|            </ipxact:portReferences>
+197|        </ipxact:adHocConnection>
+198|        <ipxact:adHocConnection>
+199|            <ipxact:name>ddrphy_rst_n</ipxact:name>
+200|            <ipxact:portReferences>
+201|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="ddrphy_rst_n_mc"/>
+202|                <ipxact:externalPortReference portRef="ddrphy_rst_n"/>
+203|            </ipxact:portReferences>
+204|        </ipxact:adHocConnection>
+205|        <ipxact:adHocConnection>
+206|            <ipxact:name>ddrphy_rdy</ipxact:name>
+207|            <ipxact:portReferences>
+208|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="ddrphy_rdy_mc"/>
+209|                <ipxact:externalPortReference portRef="ddrphy_rdy"/>
+210|            </ipxact:portReferences>
+211|        </ipxact:adHocConnection>
+212|        <ipxact:adHocConnection>
+213|            <ipxact:name>paxi_awaddr</ipxact:name>
+214|            <ipxact:portReferences>
+215|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="paxi_awaddr_mc"/>
+216|                <ipxact:externalPortReference portRef="paxi_awaddr"/>
+217|            </ipxact:portReferences>
+218|        </ipxact:adHocConnection>
+219|        <ipxact:adHocConnection>
+220|            <ipxact:name>paxi_awvalid</ipxact:name>
+221|            <ipxact:portReferences>
+222|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="paxi_awvalid_mc"/>
+223|                <ipxact:externalPortReference portRef="paxi_awvalid"/>
+224|            </ipxact:portReferences>
+225|        </ipxact:adHocConnection>
+226|        <ipxact:adHocConnection>
+227|            <ipxact:name>paxi_awready</ipxact:name>
+228|            <ipxact:portReferences>
+229|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="paxi_awready_mc"/>
+230|                <ipxact:externalPortReference portRef="paxi_awready"/>
+231|            </ipxact:portReferences>
+232|        </ipxact:adHocConnection>
+233|        <ipxact:adHocConnection>
+234|            <ipxact:name>paxi_wdata</ipxact:name>
+235|            <ipxact:portReferences>
+236|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="paxi_wdata_mc"/>
+237|                <ipxact:externalPortReference portRef="paxi_wdata"/>
+238|            </ipxact:portReferences>
+239|        </ipxact:adHocConnection>
+240|        <ipxact:adHocConnection>
+241|            <ipxact:name>paxi_wstrb</ipxact:name>
+242|            <ipxact:portReferences>
+243|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="paxi_wstrb_mc"/>
+244|                <ipxact:externalPortReference portRef="paxi_wstrb"/>
+245|            </ipxact:portReferences>
+246|        </ipxact:adHocConnection>
+247|        <ipxact:adHocConnection>
+248|            <ipxact:name>paxi_wvalid</ipxact:name>
+249|            <ipxact:portReferences>
+250|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="paxi_wvalid_mc"/>
+251|                <ipxact:externalPortReference portRef="paxi_wvalid"/>
+252|            </ipxact:portReferences>
+253|        </ipxact:adHocConnection>
+254|        <ipxact:adHocConnection>
+255|            <ipxact:name>paxi_wlast</ipxact:name>
+256|            <ipxact:portReferences>
+257|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="paxi_wlast_mc"/>
+258|                <ipxact:externalPortReference portRef="paxi_wlast"/>
+259|            </ipxact:portReferences>
+260|        </ipxact:adHocConnection>
+261|        <ipxact:adHocConnection>
+262|            <ipxact:name>paxi_wready</ipxact:name>
+263|            <ipxact:portReferences>
+264|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="paxi_wready_mc"/>
+265|                <ipxact:externalPortReference portRef="paxi_wready"/>
+266|            </ipxact:portReferences>
+267|        </ipxact:adHocConnection>
+268|        <ipxact:adHocConnection>
+269|            <ipxact:name>paxi_araddr</ipxact:name>
+270|            <ipxact:portReferences>
+271|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="paxi_araddr_mc"/>
+272|                <ipxact:externalPortReference portRef="paxi_araddr"/>
+273|            </ipxact:portReferences>
+274|        </ipxact:adHocConnection>
+275|        <ipxact:adHocConnection>
+276|            <ipxact:name>paxi_arvalid</ipxact:name>
+277|            <ipxact:portReferences>
+278|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="paxi_arvalid_mc"/>
+279|                <ipxact:externalPortReference portRef="paxi_arvalid"/>
+280|            </ipxact:portReferences>
+281|        </ipxact:adHocConnection>
+282|        <ipxact:adHocConnection>
+283|            <ipxact:name>paxi_arready</ipxact:name>
+284|            <ipxact:portReferences>
+285|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="paxi_arready_mc"/>
+286|                <ipxact:externalPortReference portRef="paxi_arready"/>
+287|            </ipxact:portReferences>
+288|        </ipxact:adHocConnection>
+289|        <ipxact:adHocConnection>
+290|            <ipxact:name>paxi_rdata</ipxact:name>
+291|            <ipxact:portReferences>
+292|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="paxi_rdata_mc"/>
+293|                <ipxact:externalPortReference portRef="paxi_rdata"/>
+294|            </ipxact:portReferences>
+295|        </ipxact:adHocConnection>
+296|        <ipxact:adHocConnection>
+297|            <ipxact:name>paxi_rlast</ipxact:name>
+298|            <ipxact:portReferences>
+299|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="paxi_rlast_mc"/>
+300|                <ipxact:externalPortReference portRef="paxi_rlast"/>
+301|            </ipxact:portReferences>
+302|        </ipxact:adHocConnection>
+303|        <ipxact:adHocConnection>
+304|            <ipxact:name>paxi_rvalid</ipxact:name>
+305|            <ipxact:portReferences>
+306|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="paxi_rvalid_mc"/>
+307|                <ipxact:externalPortReference portRef="paxi_rvalid"/>
+308|            </ipxact:portReferences>
+309|        </ipxact:adHocConnection>
+310|        <ipxact:adHocConnection>
+311|            <ipxact:name>paxi_rready</ipxact:name>
+312|            <ipxact:portReferences>
+313|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="paxi_rready_mc"/>
+314|                <ipxact:externalPortReference portRef="paxi_rready"/>
+315|            </ipxact:portReferences>
+316|        </ipxact:adHocConnection>
+317|        <ipxact:adHocConnection>
+318|            <ipxact:name>ddr_ck_p</ipxact:name>
+319|            <ipxact:portReferences>
+320|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="ddr_ck_p_mc"/>
+321|                <ipxact:externalPortReference portRef="ddr_ck_p"/>
+322|            </ipxact:portReferences>
+323|        </ipxact:adHocConnection>
+324|        <ipxact:adHocConnection>
+325|            <ipxact:name>ddr_ck_n</ipxact:name>
+326|            <ipxact:portReferences>
+327|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="ddr_ck_n_mc"/>
+328|                <ipxact:externalPortReference portRef="ddr_ck_n"/>
+329|            </ipxact:portReferences>
+330|        </ipxact:adHocConnection>
+331|        <ipxact:adHocConnection>
+332|            <ipxact:name>ddr_cke</ipxact:name>
+333|            <ipxact:portReferences>
+334|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="ddr_cke_mc"/>
+335|                <ipxact:externalPortReference portRef="ddr_cke"/>
+336|            </ipxact:portReferences>
+337|        </ipxact:adHocConnection>
+338|        <ipxact:adHocConnection>
+339|            <ipxact:name>ddr_odt</ipxact:name>
+340|            <ipxact:portReferences>
+341|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="ddr_odt_mc"/>
+342|                <ipxact:externalPortReference portRef="ddr_odt"/>
+343|            </ipxact:portReferences>
+344|        </ipxact:adHocConnection>
+345|        <ipxact:adHocConnection>
+346|            <ipxact:name>ddr_cs_n</ipxact:name>
+347|            <ipxact:portReferences>
+348|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="ddr_cs_n_mc"/>
+349|                <ipxact:externalPortReference portRef="ddr_cs_n"/>
+350|            </ipxact:portReferences>
+351|        </ipxact:adHocConnection>
+352|        <ipxact:adHocConnection>
+353|            <ipxact:name>ddr_ras_n</ipxact:name>
+354|            <ipxact:portReferences>
+355|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="ddr_ras_n_mc"/>
+356|                <ipxact:externalPortReference portRef="ddr_ras_n"/>
+357|            </ipxact:portReferences>
+358|        </ipxact:adHocConnection>
+359|        <ipxact:adHocConnection>
+360|            <ipxact:name>ddr_cas_n</ipxact:name>
+361|            <ipxact:portReferences>
+362|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="ddr_cas_n_mc"/>
+363|                <ipxact:externalPortReference portRef="ddr_cas_n"/>
+364|            </ipxact:portReferences>
+365|        </ipxact:adHocConnection>
+366|        <ipxact:adHocConnection>
+367|            <ipxact:name>ddr_we_n</ipxact:name>
+368|            <ipxact:portReferences>
+369|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="ddr_we_n_mc"/>
+370|                <ipxact:externalPortReference portRef="ddr_we_n"/>
+371|            </ipxact:portReferences>
+372|        </ipxact:adHocConnection>
+373|        <ipxact:adHocConnection>
+374|            <ipxact:name>ddr_ba</ipxact:name>
+375|            <ipxact:portReferences>
+376|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="ddr_ba_mc"/>
+377|                <ipxact:externalPortReference portRef="ddr_ba"/>
+378|            </ipxact:portReferences>
+379|        </ipxact:adHocConnection>
+380|        <ipxact:adHocConnection>
+381|            <ipxact:name>ddr_addr</ipxact:name>
+382|            <ipxact:portReferences>
+383|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="ddr_addr_mc"/>
+384|                <ipxact:externalPortReference portRef="ddr_addr"/>
+385|            </ipxact:portReferences>
+386|        </ipxact:adHocConnection>
+387|        <ipxact:adHocConnection>
+388|            <ipxact:name>ddr_dqs_p</ipxact:name>
+389|            <ipxact:portReferences>
+390|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="ddr_dqs_p_mc"/>
+391|                <ipxact:externalPortReference portRef="ddr_dqs_p"/>
+392|            </ipxact:portReferences>
+393|        </ipxact:adHocConnection>
+394|        <ipxact:adHocConnection>
+395|            <ipxact:name>ddr_dqs_n</ipxact:name>
+396|            <ipxact:portReferences>
+397|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="ddr_dqs_n_mc"/>
+398|                <ipxact:externalPortReference portRef="ddr_dqs_n"/>
+399|            </ipxact:portReferences>
+400|        </ipxact:adHocConnection>
+401|        <ipxact:adHocConnection>
+402|            <ipxact:name>ddr_dq</ipxact:name>
+403|            <ipxact:portReferences>
+404|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="ddr_dq_mc"/>
+405|                <ipxact:externalPortReference portRef="ddr_dq"/>
+406|            </ipxact:portReferences>
+407|        </ipxact:adHocConnection>
+408|        <ipxact:adHocConnection>
+409|            <ipxact:name>ddr_dm</ipxact:name>
+410|            <ipxact:portReferences>
+411|                <ipxact:internalPortReference componentRef="ph1p_ddrmc_wrapper_63f4ac254419_Inst" portRef="ddr_dm_mc"/>
+412|                <ipxact:externalPortReference portRef="ddr_dm"/>
+413|            </ipxact:portReferences>
+414|        </ipxact:adHocConnection>
+415|    </ipxact:adHocConnections>
+416|    <ipxact:vendorExtensions>
+417|        <anlogic:device>PH1P35MDG324</anlogic:device>
+418|        <anlogic:speed>-3</anlogic:speed>
+419|        <anlogic:displayname>MIS - DDR2/DDR3/DDR4</anlogic:displayname>
+420|        <anlogic:ipGenVersion value="168007 2025/07/10">1.0</anlogic:ipGenVersion>
+421|    </ipxact:vendorExtensions>
+422|</ipxact:design>
+423|
