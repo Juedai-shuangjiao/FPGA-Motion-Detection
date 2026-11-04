@@ -1,0 +1,21 @@
+# 安路 TD 工程 .gitignore 模板（FPGACompetition_nogrant 实测在用）
+# 编译产物（TD 综合/布局布线输出，可随时重编生成）
+prj/FPGACompetition_Runs/
+prj/al_ip/
+prj/log/
+*.db
+*.bit
+*.rpt
+*.log
+*.end.f
+*.begin.f
+
+# 仿真产物（iverilog 编译二进制与波形）
+sim/*.vcd
+sim/*.vvp
+sim/dem_files/
+
+# 系统文件
+*.swp
+*~
+Thumbs.db
